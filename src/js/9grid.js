@@ -63,11 +63,16 @@ $(function(){
         $('#set_pwd').show();
         $('#bt_pwd_ok').on('click', function(){
             var value = $('#text_pwd').val();
+			var value2 = $('#text_pwd2').val();
             if(value !=''){
-                window.localStorage.setItem('passwordxx',value);
-                $('#set_pwd').hide();
-                call_back();
-            }else{
+				if(value == value2){
+					window.localStorage.setItem('passwordxx',value);
+					$('#set_pwd').hide();
+					call_back();
+				}else{
+					alert('two input are not same!')
+				}
+			}else{
                 alert('password can not null!');
             }
         });
