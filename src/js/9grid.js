@@ -21,7 +21,7 @@ $(function(){
     }
     $('#'+menu_item).addClass('content_item_focus');
     $('.nav_menu .menu_item[href*="'+menu_item+'"]').addClass('selected');
-
+    $('.nav_default').height($('.wrapper').height());
     init_pwd(function(){
         init(menu_item);    
     });    
@@ -46,7 +46,7 @@ $(function(){
                 break;
             default:               
         }   
-        $('.nav_default').height($('.wrapper').height()); 
+         
     }
     $('#nav_btn').click(function(){
         $('.wrapper').toggleClass('mini_navbar');
