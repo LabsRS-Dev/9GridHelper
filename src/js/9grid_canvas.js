@@ -34,6 +34,7 @@
             alert('save fail!');
         });                       
     };
+    
     $.extend(_9grid,{
         init_canvas:function(){
             H5lock.init_profile(function(){
@@ -50,6 +51,7 @@
                 $('#bt_hand').click(function(){
                     grid.init_panel();
                 });    
+                
             });
                 
         }

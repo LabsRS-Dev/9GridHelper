@@ -8,7 +8,23 @@
     <link rel="stylesheet" type="text/css" href="styles/datatables.min.css">
     <link rel="stylesheet" type="text/css" href="styles/9grid.css">
     <link rel="stylesheet" type="text/css" href="styles/spectrum.css">
-
+    <script src="js/jquery-1.11.0.js"></script>
+    <script type="text/javascript" src="js/util.js"></script>
+    <script type="text/javascript" src="js/bs.js"></script>
+    <script type="text/javascript" src="js/test.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="data/lib_indexs.js"></script>
+    <script type="text/javascript" src="data/lib_datas.js"></script>
+    <script type="text/javascript" src="js/dateformat.js"></script>
+    <script type="text/javascript" src="js/H5lock.js"></script>
+    <script type="text/javascript" src="js/datatables.min.js"></script>
+    <script type="text/javascript" src="js/9grid.js"></script>  
+    <script type="text/javascript" src="js/9grid_canvas.js"></script>
+    <script type="text/javascript" src="js/9grid_my.js"></script>
+    <script type="text/javascript" src="js/9grid_lib.js"></script>
+    <script type="text/javascript" src="js/9grid_setting.js"></script>
+    <script type="text/javascript" src="js/spectrum.js"></script>
     <title>9GridHelper</title>    
 </head>
 <body>
@@ -176,25 +192,25 @@
         <input type="button" id="setting_ok" class="btn btn-primary" value="Ok" />
     </div>
 </div>
-
-    <script src="js/jquery-1.11.0.js"></script>
-    <script type="text/javascript" src="sdk/util.js"></script>
-    <script type="text/javascript" src="sdk/bs.js"></script>
-    <script type="text/javascript" src="sdk/test.js"></script>
-	
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/common.js"></script>
-    <script type="text/javascript" src="data/lib_indexs.js"></script>
-    <script type="text/javascript" src="data/lib_datas.js"></script>
-    <script type="text/javascript" src="js/dateformat.js"></script>
-    <script type="text/javascript" src="js/H5lock.js"></script>
-    <script type="text/javascript" src="js/datatables.min.js"></script>
-    <script type="text/javascript" src="js/9grid.js"></script>  
-    <script type="text/javascript" src="js/9grid_canvas.js"></script>
-    <script type="text/javascript" src="js/9grid_my.js"></script>
-    <script type="text/javascript" src="js/9grid_lib.js"></script>
-    <script type="text/javascript" src="js/9grid_setting.js"></script>
-    <script type="text/javascript" src="js/spectrum.js"></script>
+<div id="set_pwd" style="display: none;position: absolute; margin: auto; top: 0; left: 0; bottom: 0; right: 0;width:300px;height:100px; background-color: #FF0000;padding-top: 20px; z-index: 100;">
+    <div>
+        <div style="display: inline-block;width: 120px;text-align: right;"><span>new password:</span></div>
+        <div style="display: inline-block;"><input type="text" id="text_pwd" /> </div>
+    </div>
+    <div style="text-align: center;margin-top: 10px;">        
+        <input type="button" id="bt_pwd_ok" class="btn btn-primary" value="Ok" />
+    </div>
+</div>
+<div id="valid_pwd" style="display: none;position: absolute; margin: auto; top: 0; left: 0; bottom: 0; right: 0;width:300px;height:100px; background-color: #FF0000;padding-top: 20px; z-index: 100;">
+    <div>
+        <div style="display: inline-block;width: 120px;text-align: right;"><span>valid password:</span></div>
+        <div style="display: inline-block;"><input type="text" id="text_valid_pwd" /> </div>
+    </div>
+    <div style="text-align: center;margin-top: 10px;">        
+        <input type="button" id="bt_valid_pwd" class="btn btn-primary" value="Ok" />
+    </div>
+</div>
 
 </body>
+</html>
 </html>

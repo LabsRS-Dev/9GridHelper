@@ -191,10 +191,11 @@
         }       
         
         H5lock.prototype.init = function() {
-            this.pswObj = window.localStorage.getItem('passwordxx') ? {
+            /*this.pswObj = window.localStorage.getItem('passwordxx') ? {
                 step: 2,
                 spassword: JSON.parse(window.localStorage.getItem('passwordxx'))
-            } : {};
+            } : {};*/
+            
             this.lastPoint = [];
             this.touchFlag = false;
             this.canvas = document.getElementById('canvas');
