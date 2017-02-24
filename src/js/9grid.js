@@ -22,7 +22,7 @@ $(function(){
     $('#'+menu_item).addClass('content_item_focus');
     $('.nav_menu .menu_item[href*="'+menu_item+'"]').addClass('selected');
     //$('.nav_default').height($('.wrapper').height());
-    $('.nav_default').height($(window).height());
+    //$('.nav_default').height($(window).height());
     init_pwd(function(){
         init(menu_item);    
     });    

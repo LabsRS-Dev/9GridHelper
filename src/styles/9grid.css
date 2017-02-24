@@ -1,4 +1,7 @@
-﻿body {
+﻿html{
+    height: 100%;
+}
+body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "HelveticaNeue-Light", "Ubuntu", "Droid Sans", sans-serif;
   /*background-color: #2f4050;*/
   font-size: 15px;
@@ -6,6 +9,7 @@
   overflow-x: hidden;
   padding-top: 0px;
   padding-bottom: 0px;
+  height: 100%;
 }
 .title {
     color: #22C3AA;
