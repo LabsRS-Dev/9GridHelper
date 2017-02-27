@@ -123,6 +123,35 @@ window.usr_setting = {};
         $('#setting_cancel').click(function(){
             $('#shadow_setting').hide();
         });
+
+        $('#bt_up_pwd').click(function(){
+            $('#up_pwd').show();
+        });      
+        $('#bt_up_pwd_ok').click(function(){
+            var old_pwd = $('#up_pwd_old').val();
+            var new_pwd = $('#up_pwd_new').val();
+            var new_vad = $('#up_pwd_vad').val();
+            var pwd = window.localStorage.getItem('passwordxx');
+            if(old_pwd !='' && old_pwd == pwd){
+                if(new_pwd != old_pwd){
+                    if(new_pwd ==''){
+                        alert('new password can not be null!');
+                        return ;
+                    }
+                    if(new_pwd == new_vad){
+                        window.localStorage.setItem('passwordxx',new_pwd);
+                        $('#up_pwd').hide();
+                    }else{
+                        alert('new password and valid password are not same!');
+                    }                    
+                }else{
+                    alert('new and old password can not same!')
+                }
+            }else{
+                alert('old password is not right!');
+            }
+        });    
+        
     }
 
     function update_profile(key, value){
