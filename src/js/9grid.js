@@ -86,6 +86,7 @@ $(function(){
             if(value!=''){
                 if(value == pwd){
                     $('#valid_pwd').hide();
+                    window.sessionStorage.setItem('passwordxx',value);
                     call_back();
                 }else{
                     alert('password is error!');
@@ -98,10 +99,15 @@ $(function(){
 
     function init_pwd(call_back){
         var pwd = window.localStorage.getItem('passwordxx');
+        var pwd_session = window.sessionStorage.getItem('passwordxx');
         if(pwd ==null || pwd ==''){
             set_pwd(call_back);
         }else{
-            valid_pwd(pwd, call_back);
+            if(pwd_session ==null){
+                valid_pwd(pwd, call_back);
+            }else{
+                call_back();
+            }            
         }
     }
 })
